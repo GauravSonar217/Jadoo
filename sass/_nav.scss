@@ -1,0 +1,37 @@
+nav {
+    padding: 1rem 0px;
+    @include glassEffect;
+    z-index: 1000;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .container {
+        @include flexRow;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    ul {
+        @include flexRow;
+        align-items: center;
+
+        li {
+            margin: 0px 2rem;
+        }
+    }
+
+    a {
+        color: $darkBlue;
+    }
+
+    .signUp {
+        @include outlineBtn;
+    }
+
+    // img {
+    //     width: 100px;
+    // }
+}

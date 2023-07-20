@@ -1,0 +1,66 @@
+main {
+    position: relative;
+
+
+    #decore {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        z-index: -1;
+    }
+
+    #brandingSec {
+        .col-6:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 6rem;
+
+            h2 {
+                font-size: 5.25rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $description;
+                line-height: 30px;
+            }
+        }
+
+        .col-6:last-child {
+            img {
+                width: 75%;
+                float: right;
+                margin-top: 4rem;
+            }
+        }
+
+        a {
+            margin: 1rem;
+
+            :hover {
+                text-decoration: none;
+            }
+        }
+
+        a:nth-child(1) {
+            @include fillBtn;
+            margin-left: 0px;
+        }
+
+        a:nth-child(2) {
+            color: $description;
+        }
+
+        a i {
+            background-color: $darkOrange;
+            padding: 1rem 1.1rem;
+            border-radius: 37px;
+            color: $white;
+            margin-right: 1rem;
+        }
+    }
+
+}
